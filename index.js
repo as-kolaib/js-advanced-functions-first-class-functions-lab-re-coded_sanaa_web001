@@ -1,4 +1,5 @@
 // Code your solution in this file!
+
 const returnFirstTwoDrivers=function(drivers){
   drivers=[drivers[0],drivers[1]]
   return drivers
@@ -17,4 +18,10 @@ const createFareMultiplier=function(n){
   }
   const fareDoubler =(m) => {return createFareMultiplier(m)(2) };
  
-  const fareDoubler =(m) => {return createFareMultiplier(m)(3) };
+  const fareTripler =(m) => {return createFareMultiplier(m)(3) };
+  
+  const selectDifferentDrivers=function(arrayOfDrivers,fun){
+
+    return fun(arrayOfDrivers);
+  
+}
